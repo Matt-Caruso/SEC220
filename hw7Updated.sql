@@ -34,5 +34,14 @@ create table orders
 
 create index customerId
     on orders (customerId);
+    
+create table warehouse
+(
+    id       int auto_increment
+        primary key,
+    location varchar(20) null,
+    constraint id
+        unique (id)
+);
 
 
